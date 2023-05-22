@@ -49,7 +49,7 @@ public class CustomAuthenticationSuccessHandler extends SavedRequestAwareAuthent
         EmployeeRequest employeeRequest = new EmployeeRequest(email,name,profilePic);
         employeeService.createEmployeeFromGoogleAuth(employeeRequest);
 
-        String targetUrl = "https://thankful-coast-0e5d88710.3.azurestaticapps.net/#/";
+        String targetUrl = "https://lemon-coast-0167bad03.3.azurestaticapps.net/#/";
         redirectStrategy.sendRedirect(request, response, targetUrl);
     }
 }
